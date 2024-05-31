@@ -18,7 +18,7 @@ class MySearchBAR extends StatelessWidget {
         children: [
           const Icon(
             Icons.search,
-            color: Colors.grey,
+            color: AppColor.grey,
             size: 30,
           ),
           const SizedBox(width: 10),
@@ -26,19 +26,19 @@ class MySearchBAR extends StatelessWidget {
             flex: 4,
             child: TextField(
               decoration: InputDecoration(
-                  hintText: "Search...", border: InputBorder.none),
+                  hintText: "Tìm kiếm...", border: InputBorder.none),
             ),
           ),
           Container(
             height: 25,
             width: 1.5,
-            color: Colors.grey,
+            color: AppColor.grey,
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
               Icons.tune,
-              color: Colors.grey,
+              color: AppColor.grey,
             ),
           ),
         ],

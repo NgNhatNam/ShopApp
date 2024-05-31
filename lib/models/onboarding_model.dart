@@ -7,25 +7,27 @@ class UnbordingContent {
 }
 
 List<UnbordingContent> contents = [
-  UnbordingContent(
-    title: 'Quality Food',
-    image: 'images/food_1.png',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it ",
-  ),
-  UnbordingContent(
-    title: 'Fast Delivery',
-    image: 'images/food_2.png',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it ",
-  ),
-  UnbordingContent(
-    title: 'Reward Surprises',
-    image: 'images/food_3.png',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it ",
-  ),
+UnbordingContent(
+  title: 'Chất lượng',
+  image: 'images/beauty.png',
+  discription: "Shop NNN tự hào mang đến cho bạn "
+      "những sản phẩm chất lượng cao với giá cả hợp lý, "
+      "đáp ứng mọi nhu cầu mua sắm của bạn.",
+),
+UnbordingContent(
+  title: 'Giao hàng nhanh',
+  image: 'images/men.png',
+  discription: "Shop NNN đảm bảo giao hàng nhanh chóng và tiện lợi, "
+      "giúp bạn tiết kiệm thời gian và nhận hàng đúng hẹn, "
+      "dù bạn ở bất kỳ đâu.",
+),
+UnbordingContent(
+  title: 'Ưu đãi bất ngờ',
+  image: 'images/shoes.png',
+  discription: "Khách hàng của Shop NNN sẽ nhận được những phần quà bất ngờ "
+      "và ưu đãi đặc biệt, mang đến những trải nghiệm mua sắm thú vị "
+      "và giá trị vượt trội.",
+),
+
 ];
+

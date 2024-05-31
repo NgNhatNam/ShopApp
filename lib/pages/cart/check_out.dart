@@ -1,11 +1,10 @@
+import 'package:cuoi_ki_flutter/pages/cart/paid_product.dart';
 import 'package:cuoi_ki_flutter/provider/cart_provider.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
-import 'package:flutter/material.dart';
-
-class CheckOutBox extends StatelessWidget {
+import 'package:flutter/material.dart';class CheckOutBox extends StatelessWidget {
   const CheckOutBox({
-    super.key,
-  });
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class CheckOutBox extends StatelessWidget {
       height: 300,
       width: double.infinity,
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: AppColor.white,
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(30),
           topLeft: Radius.circular(30),
@@ -36,16 +35,16 @@ class CheckOutBox extends StatelessWidget {
               ),
               filled: true,
               fillColor: AppColor.kcontentColor,
-              hintText: "Enter Discount Code",
+              hintText: "Nhập mã giảm giá",
               hintStyle: const TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: Colors.grey,
+                color: AppColor.grey,
               ),
               suffixIcon: TextButton(
                 onPressed: () {},
                 child: const Text(
-                  "Apply",
+                  "Hoàn thành",
                   style: TextStyle(
                     color: AppColor.kprimaryColor,
                     fontSize: 20,
@@ -60,11 +59,11 @@ class CheckOutBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
-                "Subtotal",
+                "Tổng phụ",
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.grey,
+                  color: AppColor.grey,
                 ),
               ),
               Text(
@@ -83,7 +82,7 @@ class CheckOutBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
-                "Total",
+                "Tổng",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -100,16 +99,26 @@ class CheckOutBox extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+                provider.checkout();
+                // Xóa giá trị sau khi checkout
+                provider.clearTotalPrice();
+                // Điều hướng đến trang mới
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PaidProductsPage(),
+                  ),
+                );
+            },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColor.kprimaryColor,
               minimumSize: const Size(double.infinity, 55),
             ),
             child: const Text(
-              "Check out",
+              "Thanh toán",
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.white,
+                color: AppColor.white,
                 fontWeight: FontWeight.bold,
               ),
             ),

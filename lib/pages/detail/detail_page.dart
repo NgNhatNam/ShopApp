@@ -23,7 +23,6 @@ class _DetailPageState extends State<DetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.kcontentColor,
-      // for add to cart , icon and quantity
       floatingActionButton: AddToCart(product: widget.product),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: SafeArea(
@@ -31,9 +30,7 @@ class _DetailPageState extends State<DetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // for back button share and favorite,
             DetailAppBar(product: widget.product,),
-            // for detail image slider
             MyImageSlider(
               image: widget.product.image,
               onChange: (index) {
@@ -55,10 +52,10 @@ class _DetailPageState extends State<DetailPage> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: currentImage == index
-                        ? Colors.black
-                        : Colors.transparent,
+                        ? AppColor.black
+                        : AppColor.transparent,
                     border: Border.all(
-                      color: Colors.black,
+                      color: AppColor.black,
                     ),
                   ),
                 ),
@@ -68,7 +65,7 @@ class _DetailPageState extends State<DetailPage> {
             Container(
               width: double.infinity,
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: AppColor.white,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(40),
                   topLeft: Radius.circular(40),
@@ -107,7 +104,7 @@ class _DetailPageState extends State<DetailPage> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: currentColor == index
-                                ? Colors.white
+                                ? AppColor.white
                                 : widget.product.colors[index],
                             border: currentColor == index
                                 ? Border.all(
@@ -131,7 +128,7 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                   ),
                    const SizedBox(height: 25),
-                   // for description
+
                    Description(description: widget.product.description,)
                 ],
               ),

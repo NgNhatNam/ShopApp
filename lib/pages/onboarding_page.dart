@@ -109,11 +109,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             top: 40,
             right: 20,
             child: GestureDetector(
-              onTap: () {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) {
-                  return const LoginPage();
-                }));
-              },
+              onTap: _completeOnboarding, 
               child: const Text(
                 'Bỏ qua',
                 style: TextStyle(

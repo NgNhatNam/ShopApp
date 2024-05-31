@@ -15,23 +15,23 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-
   SharedPrefs prefs = SharedPrefs();
   UserModel user = UserModel();
+
   @override
   void initState() {
     super.initState();
     _check();
   }
 
-   void _getUser() {
+ /*  void _getUser() {
     prefs.getUser().then((value) {
       user = value ?? UserModel();
       setState(() {});
     });
-  } 
+  }  */
 
-    void _check() async {
+  void _check() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     bool onboardingCompleted = pref.getBool('onboardingCompleted') ?? false;
 
@@ -39,23 +39,24 @@ class _SplashPageState extends State<SplashPage> {
     String keylogin = user.keylogin ?? '0';
 
     Timer(const Duration(seconds: 2), () {
-    if (onboardingCompleted) {
-      if (keylogin == '1') {
-        Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => const BottomNavBar()));
+      if (onboardingCompleted) {
+        if (keylogin == '1') {
+          Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const BottomNavBar()));
+        } else {
+          Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const LoginPage()));
+        }
       } else {
         Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => const LoginPage()));
+          MaterialPageRoute(builder: (context) => const OnboardingPage()));
       }
-    } else {
-      Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (context) => OnboardingPage()));
-    }});
+    });
   }
 
-   
+  @override
   Widget build(BuildContext context) {
-      Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
 
     return Scaffold(
       body: Stack(
@@ -69,7 +70,7 @@ class _SplashPageState extends State<SplashPage> {
           Center(
             child: Image.asset(
               'images/logo.png',
-              width: 160.0,
+              width: 200.0,
             ),
           ), 
         ],

@@ -1,3 +1,4 @@
+import 'package:cuoi_ki_flutter/pages/detail/detail_page.dart';
 import 'package:cuoi_ki_flutter/provider/favourite_provider.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
@@ -5,22 +6,28 @@ import 'package:flutter/material.dart';
 
 
 class Favorite extends StatefulWidget {
-  const Favorite({super.key});
+  const Favorite({super.key
+    });
+  
 
   @override
   State<Favorite> createState() => _FavoriteState();
 }
 
 class _FavoriteState extends State<Favorite> {
+
+ 
+  
   @override
   Widget build(BuildContext context) {
     final provider = FavoriteProvider.of(context);
     final finalList = provider.favorites;
+    
     return Scaffold(
       backgroundColor: AppColor.kcontentColor,
       appBar: AppBar(
         backgroundColor: AppColor.kcontentColor,
-        title: const Text("Favorite",style: TextStyle(fontWeight: FontWeight.bold),),
+        title: const Text("Yêu thích",style: TextStyle(fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
       body: Column(
@@ -33,27 +40,39 @@ class _FavoriteState extends State<Favorite> {
                 return Stack(
                   children: [
                     Padding(
+                      
                       padding: const EdgeInsets.all(15.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: AppColor.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         padding: const EdgeInsets.all(10),
                         child: Row(
                           children: [
-                            Container(
-                              height: 90,
-                              width: 90,
-                              decoration: BoxDecoration(
-                                color: AppColor.kcontentColor,
-                                borderRadius: BorderRadius.circular(20),
+                            GestureDetector(
+                              onTap: () {
+                                  Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) => DetailPage(product: favoritItems),
+                                            ),
+                                          );
+                              },
+                              child: Container(
+                                height: 90,
+                                width: 90,
+                                decoration: BoxDecoration(
+                                  color: AppColor.kcontentColor,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                padding: const EdgeInsets.all(10),
+                                child: Image.asset(
+                                  favoritItems.image,
                               ),
-                              padding: const EdgeInsets.all(10),
-                              child: Image.asset(
-                                favoritItems.image,
-                              ),
+                              )
+                              
                             ),
                             const SizedBox(width: 10),
                             Column(
@@ -72,7 +91,7 @@ class _FavoriteState extends State<Favorite> {
                                   style: const TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.grey,
+                                    color: AppColor.grey,
                                   ),
                                 ),
                                 const SizedBox(height: 8),
@@ -103,7 +122,7 @@ class _FavoriteState extends State<Favorite> {
                               );
                             },
                             child: const Icon(Icons.delete,
-                                color: Colors.red, size: 25),
+                                color: AppColor.red, size: 25),
                           ),
                         ],
                       ),

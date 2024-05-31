@@ -1,9 +1,7 @@
 import 'package:cuoi_ki_flutter/provider/cart_provider.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
-import '../nav_bar_screen.dart';
 import 'check_out.dart';
-
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
 
@@ -15,7 +13,7 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     final provider = CartProvider.of(context);
-    final finalList = provider.cart;
+    final finalList = provider.unpaidProducts;
 
     productQuantity(IconData icon, int index) {
       return GestureDetector(
@@ -34,44 +32,19 @@ class _CartPageState extends State<CartPage> {
     }
 
     return Scaffold(
-      // for total and check out
       backgroundColor: AppColor.kcontentColor,
-      bottomSheet:  CheckOutBox(),
-
+      bottomSheet: CheckOutBox(),
+      appBar: AppBar(
+        backgroundColor: AppColor.kcontentColor,
+        title: const Text(
+          "Giỏ hàng",
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const BottomNavBar(),
-                        ),
-                      );
-                    },
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      padding: const EdgeInsets.all(15),
-                    ),
-                    icon: const Icon(Icons.arrow_back_ios),
-                  ),
-                  const Text(
-                    "My Cart",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                    ),
-                  ),
-                  const SizedBox(),
-                ],
-              ),
-            ),
             Expanded(
               child: ListView.builder(
                 shrinkWrap: true,
@@ -85,7 +58,7 @@ class _CartPageState extends State<CartPage> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: AppColor.white,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           padding: const EdgeInsets.all(20),
@@ -111,17 +84,17 @@ class _CartPageState extends State<CartPage> {
                                     cartItems.title,
                                     style: const TextStyle(
                                       fontSize: 16,
-                                      color: Colors.black,
+                                      color: AppColor.black,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   const SizedBox(height: 5),
                                   Text(
                                     cartItems.category,
-                                    style:const TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
-                                      color: Colors.grey,
+                                      color: AppColor.grey,
                                     ),
                                   ),
                                   const SizedBox(height: 8),
@@ -146,13 +119,11 @@ class _CartPageState extends State<CartPage> {
                           children: [
                             IconButton(
                               onPressed: () {
-                                finalList[index].quantity = 1;
-                                finalList.removeAt(index);
-                                setState(() {});
+                                provider.removeFromCart(finalList[index]);
                               },
                               icon: const Icon(
                                 Icons.delete,
-                                color: Colors.red,
+                                color: AppColor.red,
                                 size: 20,
                               ),
                             ),
@@ -162,7 +133,7 @@ class _CartPageState extends State<CartPage> {
                               decoration: BoxDecoration(
                                 color: AppColor.kcontentColor,
                                 border: Border.all(
-                                  color: Colors.grey.shade200,
+                                  color: AppColor.grey,
                                   width: 2,
                                 ),
                                 borderRadius: BorderRadius.circular(20),
@@ -175,7 +146,7 @@ class _CartPageState extends State<CartPage> {
                                   Text(
                                     cartItems.quantity.toString(),
                                     style: const TextStyle(
-                                      color: Colors.black,
+                                      color: AppColor.black,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),

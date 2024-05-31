@@ -89,6 +89,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   style: TextStyle(color: AppColor.pink, fontSize: 24.0, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
+                Center(
+                    child: Image.asset(
+                      'images/logo.png',
+                      width: 200.0,
+                    ),
+                  ), 
                 const Text(
                   'Tạo tài khoản mới',
                   style: TextStyle(color: AppColor.grey, 

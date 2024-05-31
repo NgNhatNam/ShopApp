@@ -3,6 +3,7 @@ import 'package:cuoi_ki_flutter/pages/cart/cart_page.dart';
 import 'package:cuoi_ki_flutter/pages/favorite/favorite_page.dart';
 import 'package:cuoi_ki_flutter/pages/home/home_page.dart';
 import 'package:cuoi_ki_flutter/pages/profile/profile_page.dart';
+import 'package:cuoi_ki_flutter/pages/search/search_page.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int cuttentIndex = 2;
     List screens = const [
-    Scaffold(),
+    SearchPage(),
     Favorite(),
     HomePage(),
     CartPage(),
@@ -36,7 +37,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         backgroundColor: AppColor.kprimaryColor,
         child: const Icon(
           Icons.home,
-          color: Colors.white,
+          color: AppColor.white,
           size: 35,
         ),
       ),
@@ -44,7 +45,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: BottomAppBar(
         elevation: 1,
         height: 60,
-        color: Colors.white,
+        color: AppColor.white,
         shape: const CircularNotchedRectangle(),
         notchMargin: 10,
         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -59,9 +60,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 });
               },
               icon: Icon(
-                Icons.grid_view_outlined,
+                Icons.search,
                 size: 30,
-                color: cuttentIndex == 0 ? AppColor.kprimaryColor : Colors.grey.shade400,
+                color: cuttentIndex == 0 ? AppColor.kprimaryColor : AppColor.grey,
               ),
             ),
             IconButton(
@@ -73,7 +74,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               icon: Icon(
                 Icons.favorite_border,
                 size: 30,
-                color: cuttentIndex == 1 ? AppColor.kprimaryColor : Colors.grey.shade400,
+                color: cuttentIndex == 1 ? AppColor.kprimaryColor : AppColor.grey,
               ),
             ),
             const SizedBox(
@@ -88,7 +89,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 size: 30,
-                color: cuttentIndex == 3 ? AppColor.kprimaryColor : Colors.grey.shade400,
+                color: cuttentIndex == 3 ? AppColor.kprimaryColor : AppColor.grey,
               ),
             ),
             IconButton(
@@ -100,7 +101,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               icon: Icon(
                 Icons.person,
                 size: 30,
-                color: cuttentIndex == 4 ? AppColor.kprimaryColor : Colors.grey.shade400,
+                color: cuttentIndex == 4 ? AppColor.kprimaryColor : AppColor.grey,
               ),
             ),
           ],

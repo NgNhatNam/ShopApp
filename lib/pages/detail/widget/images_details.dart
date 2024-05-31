@@ -31,7 +31,6 @@ class ItemsDetails extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                // for rating
                 Row(
                   children: [
                     Container(
@@ -48,7 +47,7 @@ class ItemsDetails extends StatelessWidget {
                           const Icon(
                             Icons.star,
                             size: 15,
-                            color: Colors.white,
+                            color: AppColor.white,
                           ),
                           const SizedBox(
                             width: 3,
@@ -57,7 +56,7 @@ class ItemsDetails extends StatelessWidget {
                             product.rate.toString(),
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: AppColor.white,
                               fontSize: 14,
                             ),
                           ),
@@ -68,7 +67,7 @@ class ItemsDetails extends StatelessWidget {
                     Text(
                       product.review,
                       style: const TextStyle(
-                        color: Colors.grey,
+                        color: AppColor.grey,
                         fontSize: 15,
                       ),
                     )

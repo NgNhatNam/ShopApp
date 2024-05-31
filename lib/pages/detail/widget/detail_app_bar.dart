@@ -1,5 +1,6 @@
 import 'package:cuoi_ki_flutter/models/product_model.dart';
 import 'package:cuoi_ki_flutter/provider/favourite_provider.dart';
+import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,7 +17,7 @@ class DetailAppBar extends StatelessWidget {
         children: [
           IconButton(
             style: IconButton.styleFrom(
-              backgroundColor: Colors.white,
+              backgroundColor: AppColor.white,
               padding: const EdgeInsets.all(15),
             ),
             onPressed: () {
@@ -27,7 +28,7 @@ class DetailAppBar extends StatelessWidget {
           const Spacer(),
           IconButton(
             style: IconButton.styleFrom(
-              backgroundColor: Colors.white,
+              backgroundColor: AppColor.white,
               padding: const EdgeInsets.all(15),
             ),
             onPressed: () {},
@@ -36,7 +37,7 @@ class DetailAppBar extends StatelessWidget {
           const SizedBox(width: 10),
           IconButton(
             style: IconButton.styleFrom(
-              backgroundColor: Colors.white,
+              backgroundColor: AppColor.white,
               padding: const EdgeInsets.all(15),
             ),
             onPressed: () {
@@ -45,7 +46,7 @@ class DetailAppBar extends StatelessWidget {
             icon:  Icon(
               provider.isExist(product) ?
               Icons.favorite :Icons.favorite_border,
-              color: Colors.black,size: 25,
+              color: AppColor.black,size: 25,
               ),
           ),
         ],

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColor {
   AppColor._();
   static const Color kcontentColor = Color(0xffF5F5F5);
-  static const Color kprimaryColor = Color(0xffff660e);
+  static const Color kprimaryColor = Color.fromARGB(255, 255, 125, 207);
   static const Color transparent = Colors.transparent;
   static const Color red = Colors.red;
   static const Color blue = Color(0xFF5F52EE);

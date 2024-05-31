@@ -82,18 +82,6 @@ class MatchValidator extends TextFieldValidator {
   }
 }
 
-class NotMatchValidator extends TextFieldValidator {
-  final String? password;
-
-  NotMatchValidator(this.password, {required String errorText})
-      : super(errorText);
-
-  @override
-  bool isValid(String? value) {
-    return value != password;
-  }
-}
-
 class MultiValidator extends FieldValidator<String> {
   final List<FieldValidator> validators;
   static String _errorText = '';

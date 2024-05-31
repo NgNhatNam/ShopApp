@@ -1,14 +1,13 @@
+import 'package:cuoi_ki_flutter/components/side_bar.dart';
 import 'package:cuoi_ki_flutter/models/product_model.dart';
+import 'package:cuoi_ki_flutter/pages/home/widget/image_slider.dart';
 import 'package:cuoi_ki_flutter/pages/home/widget/product_cart.dart';
-import 'package:cuoi_ki_flutter/pages/home/widget/search_bar.dart';
+import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
-
 import '../../models/category.dart';
-import 'Widget/home_app_bar.dart';
-import 'Widget/image_slider.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -17,17 +16,35 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int currentSlider = 0;
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     List<List<Product>> selectcategories = [
       all,
       shoes,
       beauty,
-      womenFashion,
+      womenfashion,
       jewelry,
-      menFashion
+      menfashion
     ];
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColor.kcontentColor,
+        title: const Text("Trang chủ",style: TextStyle(fontWeight: FontWeight.bold),),
+        centerTitle: true,
+        actions: [
+          IconButton(
+          style: IconButton.styleFrom(
+            backgroundColor: AppColor.kcontentColor,
+            padding: const EdgeInsets.all(15),
+          ),
+          onPressed: () {},
+          iconSize: 30,
+          icon: const Icon(Icons.notifications_outlined),
+        ),
+        ],
+      ),
+      drawer: const NavBar(), // Sidebar (Drawer)
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
@@ -35,12 +52,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 35),
-              // for custom appbar
-              const CustomAppBar(),
-              const SizedBox(height: 20),
-              // for search bar
-              const MySearchBAR(),
+
               const SizedBox(height: 20),
               ImageSlider(
                 currentSlide: currentSlider,
@@ -53,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               const SizedBox(height: 20),
-              // for category selection
+
               categoryItems(),
 
               const SizedBox(height: 20),
@@ -62,14 +74,14 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Special For You",
+                      "Đặc biệt",
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.w800,
                       ),
                     ),
                     Text(
-                      "See all",
+                      "Tất cả",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
@@ -103,7 +115,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  SizedBox categoryItems() {
+SizedBox categoryItems() {
     return SizedBox(
       height: 130,
       child: ListView.builder(
@@ -154,3 +166,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+  

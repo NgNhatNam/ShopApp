@@ -1,3 +1,4 @@
+import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
 
 class ImageSlider extends StatelessWidget {
@@ -56,10 +57,10 @@ class ImageSlider extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: currentSlide == index
-                          ? Colors.black
-                          : Colors.transparent,
+                          ? AppColor.black
+                          : AppColor.transparent,
                       border: Border.all(
-                        color: Colors.black,
+                        color: AppColor.black,
                       )),
                 ),
               ),

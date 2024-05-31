@@ -25,7 +25,7 @@ class Description extends StatelessWidget {
                 "Description",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: AppColor.white,
                     fontSize: 16),
               ),
             ),
@@ -33,7 +33,7 @@ class Description extends StatelessWidget {
               "Specifications",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: AppColor.black,
                   fontSize: 16),
             ),
             const Text(
@@ -41,7 +41,7 @@ class Description extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: AppColor.black,
               ),
             ),
           ],
@@ -51,7 +51,7 @@ class Description extends StatelessWidget {
           description,
           style: const TextStyle(
             fontSize: 16,
-            color: Colors.grey,
+            color: AppColor.grey,
           ),
         ),
       ],

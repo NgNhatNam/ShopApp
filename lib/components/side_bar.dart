@@ -1,5 +1,6 @@
 import 'package:cuoi_ki_flutter/models/models.dart';
 import 'package:cuoi_ki_flutter/pages/auth/login_page.dart';
+import 'package:cuoi_ki_flutter/pages/cart/paid_product.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:cuoi_ki_flutter/services/local/share_prefs.dart';
 import 'package:flutter/material.dart';
@@ -62,14 +63,23 @@ class _NavBarState extends State<NavBar> {
             ),
             decoration: const BoxDecoration(
               color: AppColor.bgColor,
+              image: DecorationImage(
+                  image: AssetImage('images/profile.png'), // Thay đổi đường dẫn tới ảnh nền của bạn
+                  fit: BoxFit.cover,
+                  alignment: Alignment.topCenter,
+                ),
             ),
           ),
 
           ListTile(
             leading: const Icon(Icons.history),
-            title: const Text('Lịch sử thanh toán'),
+            title: const Text('Đã thanh toán'),
             onTap:() {
-              
+              Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PaidProductsPage(),
+                  ),
+                );
             },
           ),
 

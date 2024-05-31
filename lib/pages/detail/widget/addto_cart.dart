@@ -23,7 +23,7 @@ class _AddToCartState extends State<AddToCart> {
         height: 85,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          color: Colors.black,
+          color: AppColor.black,
         ),
         padding: const EdgeInsets.symmetric(horizontal: 15),
         alignment: Alignment.center,
@@ -34,7 +34,7 @@ class _AddToCartState extends State<AddToCart> {
               height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.white, width: 2),
+                border: Border.all(color: AppColor.white, width: 2),
               ),
               child: Row(
                 children: [
@@ -49,7 +49,7 @@ class _AddToCartState extends State<AddToCart> {
                     iconSize: 18,
                     icon: const Icon(
                       Icons.remove,
-                      color: Colors.white,
+                      color: AppColor.white,
                     ),
                   ),
                   const SizedBox(width: 5),
@@ -57,7 +57,7 @@ class _AddToCartState extends State<AddToCart> {
                     currentIndex.toString(),
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: AppColor.white,
                     ),
                   ),
                   const SizedBox(width: 5),
@@ -70,7 +70,7 @@ class _AddToCartState extends State<AddToCart> {
                     iconSize: 18,
                     icon: const Icon(
                       Icons.add,
-                      color: Colors.white,
+                      color: AppColor.white,
                     ),
                   )
                 ],
@@ -81,11 +81,11 @@ class _AddToCartState extends State<AddToCart> {
                 provider.toggleFavorite(widget.product);
                 const snackBar = SnackBar(
                   content: Text(
-                    "Successfully added!",
+                    "Thêm thành công!",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
-                      color: Colors.white,
+                      color: AppColor.white,
                     ),
                   ),
                   duration: Duration(seconds: 1),
@@ -101,9 +101,9 @@ class _AddToCartState extends State<AddToCart> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 child: const Text(
-                  "Add to Cart",
+                  "Thêm vào giỏ hàng",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: AppColor.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),

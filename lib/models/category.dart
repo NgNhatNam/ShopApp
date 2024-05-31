@@ -10,27 +10,27 @@ class Category {
 
 final List<Category> categoriesList = [
   Category(
-    title: "All",
+    title: "Tất\ncả",
     image: "images/all.png",
   ),
   Category(
-    title: "Shoes",
+    title: "Giày",
     image: "images/shoes.png",
   ),
   Category(
-    title: "Beauty",
+    title: "Làm đẹp",
     image: "images/beauty.png",
   ),
   Category(
-    title: "Women's\nFashion",
+    title: "Đồ\nnữ",
     image: "images/image1.png",
   ),
   Category(
-    title: "Jewelry",
+    title: "Trang\nsức",
     image: "images/jewelry.png",
   ),
   Category(
-    title: "Men's\nFashion",
+    title: "Đồ\nnam",
     image: "images/men.png",
   ),
 ];

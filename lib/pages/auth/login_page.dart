@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: SingleChildScrollView(
               child: Padding(
-              padding: const EdgeInsets.only(top: 30.0),
+              padding: const EdgeInsets.only(top: 10.0),
               child: Form(
                 key: formKey,
               child: Column(
@@ -96,6 +96,12 @@ class _LoginPageState extends State<LoginPage> {
                   fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
+                Center(
+                    child: Image.asset(
+                      'images/logo.png',
+                      width: 200.0,
+                    ),
+                  ), 
                 const Text(
                   'Đăng nhập tài khoản',
                   style: TextStyle(color: AppColor.grey, 
