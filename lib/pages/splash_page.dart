@@ -24,12 +24,6 @@ class _SplashPageState extends State<SplashPage> {
     _check();
   }
 
- /*  void _getUser() {
-    prefs.getUser().then((value) {
-      user = value ?? UserModel();
-      setState(() {});
-    });
-  }  */
 
   void _check() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
