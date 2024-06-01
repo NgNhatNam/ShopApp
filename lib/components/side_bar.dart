@@ -64,7 +64,7 @@ class _NavBarState extends State<NavBar> {
             decoration: const BoxDecoration(
               color: AppColor.bgColor,
               image: DecorationImage(
-                  image: AssetImage('images/profile.png'), // Thay đổi đường dẫn tới ảnh nền của bạn
+                  image: AssetImage('assets/images/profile.png'), // Thay đổi đường dẫn tới ảnh nền của bạn
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
                 ),

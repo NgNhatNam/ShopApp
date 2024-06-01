@@ -93,7 +93,7 @@ class _ChangeProfileState extends State<ChangeProfile> {
       body: Center(
         child: SingleChildScrollView(
               child: Padding(
-              padding: const EdgeInsets.only(top: 30.0),
+              padding: const EdgeInsets.only(top: 0.0),
               child: Form(
                 key: formKey,
               child: Column(
@@ -105,7 +105,13 @@ class _ChangeProfileState extends State<ChangeProfile> {
                   fontSize: 15.0,),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 70.0),
+                Center(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 200.0,
+                    ),
+                  ), 
+                const SizedBox(height: 50.0),
 
                 AppTextField(
                     controller: userNameController,

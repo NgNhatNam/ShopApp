@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const Text(
-                  'Chào mừng',
+                  'Chào mừng bạn',
                   style: TextStyle(color: AppColor.pink, 
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold),
@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Center(
                     child: Image.asset(
-                      'images/logo.png',
+                      'assets/images/logo.png',
                       width: 200.0,
                     ),
                   ), 

@@ -7,7 +7,7 @@ class Validator {
 
   static final passwordValidator = MultiValidator([
     RequiredValidator(errorText: 'Không được bỏ trống ô này'),
-    MinLengthValidator(6, errorText: 'Mật khẩu phải hơn 8 ký tự'),
+    MinLengthValidator(6, errorText: 'Mật khẩu phải hơn 6 ký tự'),
   ]);
 
   static final emailValidator = MultiValidator([

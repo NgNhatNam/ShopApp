@@ -17,12 +17,12 @@ class Description extends StatelessWidget {
               width: 120,
               height: 40,
               decoration: BoxDecoration(
-                color: AppColor.kcontentColor,
+                color: AppColor.black,
                 borderRadius: BorderRadius.circular(20),
               ),
               alignment: Alignment.center,
               child: const Text(
-                "Description",
+                "Miêu tả",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: AppColor.white,
@@ -30,14 +30,14 @@ class Description extends StatelessWidget {
               ),
             ),
             const Text(
-              "Specifications",
+              "Thông số",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: AppColor.black,
                   fontSize: 16),
             ),
             const Text(
-              "Reviews",
+              "Đánh giá",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

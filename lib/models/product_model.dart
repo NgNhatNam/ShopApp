@@ -31,7 +31,7 @@ final List<Product> all = [
     title: "Vans Old Skool",
     description:
         "Giày Vans Old Skool cổ điển, phong cách và dễ phối đồ. Chất liệu bền bỉ và thoải mái cho người sử dụng.",
-    image: "images/shoes/vansoldskool.png",
+    image: "assets/images/shoes/vansoldskool.png",
     price: 300,
     seller: "Mrs Store",
     colors: [
@@ -48,7 +48,7 @@ final List<Product> all = [
     title: "Giày nữ",
     description:
         "Giày nữ thời trang, thiết kế thanh lịch và thoải mái. Phù hợp cho nhiều dịp khác nhau từ công sở đến dạo phố.",
-    image: "images/shoes/women-shoes.png",
+    image: "assets/images/shoes/women-shoes.png",
     price: 500,
     seller: "Shoes Store",
     colors: [
@@ -65,7 +65,7 @@ final List<Product> all = [
     title: "Giày thể thao",
     description:
         "Giày thể thao nhẹ nhàng và êm ái, thiết kế năng động. Lý tưởng cho các hoạt động thể thao và luyện tập hàng ngày.",
-    image: "images/shoes/sportsshoes.png",
+    image: "assets/images/shoes/sportsshoes.png",
     price: 155,
     seller: "Hari Store",
     colors: [
@@ -82,7 +82,7 @@ final List<Product> all = [
     title: "Quần Jean",
     description:
         "Quần Jean nam thời trang, chất liệu bền đẹp và thoải mái. Phù hợp cho nhiều phong cách và hoàn cảnh khác nhau.",
-    image: "images/menfashion/pants.png",
+    image: "assets/images/menfashion/pants.png",
     price: 155,
     seller: "Jean Store",
     colors: [
@@ -99,7 +99,7 @@ final List<Product> all = [
     title: "Tai nghe không dây",
     description:
         "Tai nghe không dây chất lượng cao, âm thanh sống động và pin lâu dài. Thiết kế hiện đại và thoải mái khi đeo.",
-    image: "images/all/wireless.png",
+    image: "assets/images/all/wireless.png",
     price: 120,
     seller: "Tariqul isalm",
     colors: [
@@ -116,7 +116,7 @@ final List<Product> all = [
     title: "Áo len nữ",
     description:
         "Áo len nữ mềm mại và ấm áp, thiết kế thời trang phù hợp cho mùa đông. Chất liệu cao cấp và bền đẹp.",
-    image: "images/all/sweet.png",
+    image: "assets/images/all/sweet.png",
     price: 120,
     seller: "Joy Store",
     colors: [
@@ -133,7 +133,7 @@ final List<Product> all = [
     title: "Đồng hồ thông minh",
     description:
         "Đồng hồ thông minh với nhiều tính năng hiện đại, theo dõi sức khỏe và thông báo tin nhắn. Thiết kế tinh tế và sang trọng.",
-    image: "images/all/miband.jpg",
+    image: "assets/images/all/miband.jpg",
     price: 55,
     seller: "Ram Das",
     colors: [
@@ -150,7 +150,7 @@ final List<Product> all = [
     title: "Áo khoác nam",
     description:
         "Áo khoác nam phong cách, giữ ấm tốt và chống gió. Thiết kế mạnh mẽ và nam tính, phù hợp cho mọi hoạt động ngoài trời.",
-    image: "images/all/jacket.png",
+    image: "assets/images/all/jacket.png",
     price: 155,
     seller: "Jacket Store",
     colors: [
@@ -167,7 +167,7 @@ final List<Product> all = [
     title: "Đồng hồ",
     description:
         "Đồng hồ cao cấp với thiết kế sang trọng, phù hợp cho các dịp quan trọng. Chất lượng tuyệt vời và độ bền cao.",
-    image: "images/menfashion/watch.png",
+    image: "assets/images/menfashion/watch.png",
     price: 1000,
     seller: "Jacket Store",
     colors: [
@@ -184,7 +184,7 @@ final List<Product> all = [
     title: "Air Jordan",
     description:
         "Giày thể thao Air Jordan nổi tiếng, thiết kế đẹp mắt và thoải mái. Phù hợp cho cả hoạt động thể thao và thời trang hàng ngày.",
-    image: "images/shoes/AirJordan.png",
+    image: "assets/images/shoes/AirJordan.png",
     price: 255,
     seller: "The Seller",
     colors: [
@@ -202,7 +202,7 @@ final List<Product> all = [
     title: "Nước hoa Super",
     description:
         "Nước hoa Super với hương thơm quyến rũ, lưu hương lâu dài. Thiết kế chai sang trọng và tinh tế.",
-    image: "images/beauty/perfume.png",
+    image: "assets/images/beauty/perfume.png",
     price: 155,
     seller: "Love Seller",
     colors: [
@@ -219,7 +219,7 @@ final List<Product> all = [
     title: "Nhẫn cưới",
     description:
         "Nhẫn cưới đẹp mắt với thiết kế tinh xảo, chất liệu cao cấp. Biểu tượng của tình yêu và sự gắn kết vĩnh cửu.",
-    image: "images/jewelry/weddingring.png",
+    image: "assets/images/jewelry/weddingring.png",
     price: 155,
     seller: "I Am Seller",
     colors: [
@@ -236,7 +236,7 @@ final List<Product> all = [
     title: "Quần",
     description:
         "Quần thời trang nữ với chất liệu thoải mái, thiết kế hiện đại. Phù hợp cho nhiều hoàn cảnh và dễ dàng phối đồ.",
-    image: "images/womenfashion/pants.png",
+    image: "assets/images/womenfashion/pants.png",
     price: 155,
     seller: "PK Store",
     colors: [
@@ -256,7 +256,7 @@ final List<Product> shoes = [
     title: "Air Jordan",
     description:
         "Giày thể thao Air Jordan nổi tiếng, thiết kế đẹp mắt và thoải mái. Phù hợp cho cả hoạt động thể thao và thời trang hàng ngày.",
-    image: "images/shoes/AirJordan.png",
+    image: "assets/images/shoes/AirJordan.png",
     price: 255,
     seller: "The Seller",
     colors: [
@@ -273,7 +273,7 @@ final List<Product> shoes = [
     title: "Vans Old Skool",
     description:
         "Giày Vans Old Skool cổ điển, phong cách và dễ phối đồ. Chất liệu bền bỉ và thoải mái cho người sử dụng.",
-    image: "images/shoes/vansoldskool.png",
+    image: "assets/images/shoes/vansoldskool.png",
     price: 300,
     seller: "Mrs Store",
     colors: [
@@ -290,7 +290,7 @@ final List<Product> shoes = [
     title: "Giày nữ",
     description:
         "Giày nữ thời trang, thiết kế thanh lịch và thoải mái. Phù hợp cho nhiều dịp khác nhau từ công sở đến dạo phố.",
-    image: "images/shoes/women-shoes.png",
+    image: "assets/images/shoes/women-shoes.png",
     price: 500,
     seller: "Shoes Store",
     colors: [
@@ -307,7 +307,7 @@ final List<Product> shoes = [
     title: "Giày thể thao",
     description:
         "Giày thể thao nhẹ nhàng và êm ái, thiết kế năng động. Lý tưởng cho các hoạt động thể thao và luyện tập hàng ngày.",
-    image: "images/shoes/sportsshoes.png",
+    image: "assets/images/shoes/sportsshoes.png",
     price: 155,
     seller: "Hari Store",
     colors: [
@@ -324,7 +324,7 @@ final List<Product> shoes = [
     title: "Sneaker trắng",
     description:
         "Sneaker trắng phong cách, dễ dàng phối đồ. Chất liệu cao cấp và bền bỉ, phù hợp cho mọi hoàn cảnh.",
-    image: "images/shoes/whitesneaker.png",
+    image: "assets/images/shoes/whitesneaker.png",
     price: 400,
     seller: "K Store",
     colors: [
@@ -344,7 +344,7 @@ final List<Product> jewelry = [
     title: "Bông tai",
     description:
         "Bông tai đẹp, thiết kế tinh tế và sang trọng. Chất liệu cao cấp, mang lại vẻ đẹp hoàn hảo cho người đeo.",
-    image: "images/jewelry/earrings.png",
+    image: "assets/images/jewelry/earrings.png",
     price: 3000,
     seller: "Gold Store",
     colors: [
@@ -361,7 +361,7 @@ final List<Product> jewelry = [
     title: "Hộp trang sức",
     description:
         "Hộp trang sức sang trọng, chất liệu bền bỉ và đẹp mắt. Bảo quản trang sức của bạn một cách an toàn và ngăn nắp.",
-    image: "images/jewelry/jewelry-box.png",
+    image: "assets/images/jewelry/jewelry-box.png",
     price: 300,
     seller: "Love Love",
     colors: [
@@ -378,7 +378,7 @@ final List<Product> jewelry = [
     title: "Nhẫn cưới",
     description:
         "Nhẫn cưới đẹp mắt với thiết kế tinh xảo, chất liệu cao cấp. Biểu tượng của tình yêu và sự gắn kết vĩnh cửu.",
-    image: "images/jewelry/weddingring.png",
+    image: "assets/images/jewelry/weddingring.png",
     price: 155,
     seller: "I Am Seller",
     colors: [
@@ -395,7 +395,7 @@ final List<Product> jewelry = [
     title: "Vòng cổ",
     description:
         "Vòng cổ sang trọng với thiết kế tinh tế, chất liệu cao cấp. Phù hợp cho các dịp đặc biệt và làm quà tặng ý nghĩa.",
-    image: "images/jewelry/necklace-jewellery.png",
+    image: "assets/images/jewelry/necklace-jewellery.png",
     price: 5000,
     seller: "Jewellery Store",
     colors: [
@@ -416,7 +416,7 @@ final List<Product> menfashion = [
     title: "Quần Jean",
     description:
         "Quần Jean nam thời trang, chất liệu bền đẹp và thoải mái. Phù hợp cho nhiều phong cách và hoàn cảnh khác nhau.",
-    image: "images/menfashion/pants.png",
+    image: "assets/images/menfashion/pants.png",
     price: 155,
     seller: "Jean Store",
     colors: [
@@ -433,7 +433,7 @@ final List<Product> menfashion = [
     title: "Đồng hồ",
     description:
         "Đồng hồ cao cấp với thiết kế sang trọng, phù hợp cho các dịp quan trọng. Chất lượng tuyệt vời và độ bền cao.",
-    image: "images/menfashion/watch.png",
+    image: "assets/images/menfashion/watch.png",
     price: 1000,
     seller: "Jacket Store",
     colors: [
@@ -450,7 +450,7 @@ final List<Product> menfashion = [
     title: "Áo khoác nam",
     description:
         "Áo khoác nam phong cách, giữ ấm tốt và chống gió. Thiết kế mạnh mẽ và nam tính, phù hợp cho mọi hoạt động ngoài trời.",
-    image: "images/all/jacket.png",
+    image: "assets/images/all/jacket.png",
     price: 155,
     seller: "Jacket Store",
     colors: [
@@ -470,7 +470,7 @@ final List<Product> beauty = [
     title: "Nước hoa Super",
     description:
         "Nước hoa Super với hương thơm quyến rũ, lưu hương lâu dài. Thiết kế chai sang trọng và tinh tế.",
-    image: "images/beauty/perfume.png",
+    image: "assets/images/beauty/perfume.png",
     price: 155,
     seller: "Love Seller",
     colors: [
@@ -487,7 +487,7 @@ final List<Product> beauty = [
     title: "Mặt nạ làm đẹp",
     description:
         "Mặt nạ làm đẹp với công thức dưỡng ẩm và làm sáng da. Sử dụng dễ dàng và mang lại hiệu quả tức thì.",
-    image: "images/beauty/facecare.png",
+    image: "assets/images/beauty/facecare.png",
     price: 155,
     seller: "Love Seller",
     colors: [
@@ -507,7 +507,7 @@ final List<Product> womenfashion = [
     title: "Quần",
     description:
         "Quần thời trang nữ với chất liệu thoải mái, thiết kế hiện đại. Phù hợp cho nhiều hoàn cảnh và dễ dàng phối đồ.",
-    image: "images/womenfashion/pants.png",
+    image: "assets/images/womenfashion/pants.png",
     price: 155,
     seller: "PK Store",
     colors: [
@@ -524,7 +524,7 @@ final List<Product> womenfashion = [
     title: "Áo len nữ",
     description:
         "Áo len nữ mềm mại và ấm áp, thiết kế thời trang phù hợp cho mùa đông. Chất liệu cao cấp và bền đẹp.",
-    image: "images/all/sweet.png",
+    image: "assets/images/all/sweet.png",
     price: 120,
     seller: "Joy Store",
     colors: [
@@ -541,7 +541,7 @@ final List<Product> womenfashion = [
     title: "Giày nữ",
     description:
         "Giày nữ thời trang, thiết kế thanh lịch và thoải mái. Phù hợp cho nhiều dịp khác nhau từ công sở đến dạo phố.",
-    image: "images/shoes/women-shoes.png",
+    image: "assets/images/shoes/women-shoes.png",
     price: 500,
     seller: "Shoes Store",
     colors: [

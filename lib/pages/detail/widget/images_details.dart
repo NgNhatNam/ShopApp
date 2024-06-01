@@ -80,8 +80,8 @@ class ItemsDetails extends StatelessWidget {
               TextSpan(
                 children: [
                   const TextSpan(
-                    text: "Seller: ",
-                    style: TextStyle(fontSize: 16),
+                    text: "Người bán: ",
+                    style: TextStyle(fontSize: 15),
                   ),
                   TextSpan(
                     text: product.seller,

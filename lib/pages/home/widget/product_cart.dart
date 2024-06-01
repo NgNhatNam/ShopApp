@@ -38,8 +38,7 @@ class ProductCard extends StatelessWidget {
                     child: Image.asset(
                       product.image,
                       width: 150,
-                      height: 150,
-                      fit: BoxFit.cover,
+                      height: 90,
                     ),
                   ),
                 ),

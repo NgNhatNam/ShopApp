@@ -131,7 +131,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       margin: const EdgeInsets.only(right: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: AppColor.pink,
+        color: AppColor.kprimaryColor,
       ),
     );
   }

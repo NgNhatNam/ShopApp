@@ -2,7 +2,7 @@ name: cuoi_ki_flutter
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+#publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -72,6 +72,50 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/
+     - assets/images/all.png
+     - assets/images/background.png
+     - assets/images/beauty.png
+     - assets/images/image1.png
+     - assets/images/jewelry.png
+     - assets/images/logo.png
+     - assets/images/men.png
+     - assets/images/profile.png
+     - assets/images/profile3.png
+     - assets/images/shoes.png
+     - assets/images/slider.jpg
+     - assets/images/slider3.png
+     - assets/images/all/
+     - assets/images/beauty/
+     - assets/images/jewelry/
+     - assets/images/menfashion/
+     - assets/images/shoes/
+     - assets/images/womenfashion/
+     - assets/images/all/jacket.png
+     - assets/images/all/miband.jpg
+     - assets/images/all/sweet.png
+     - assets/images/all/wireless.png
+     - assets/images/beauty/facecare.png
+     - assets/images/beauty/perfume.png
+     - assets/images/jewelry/earrings.png
+     - assets/images/jewelry/jewelry-box.png
+     - assets/images/jewelry/necklace-jewellery.png
+     - assets/images/jewelry/weddingring.png
+     - assets/images/menfashion/manjacket.png
+     - assets/images/menfashion/pants.png
+     - assets/images/menfashion/shert.png
+     - assets/images/menfashion/t-shirt.png
+     - assets/images/menfashion/watch.png
+     - assets/images/shoes/AirJordan.png
+     - assets/images/shoes/NewBalance990.png
+     - assets/images/shoes/sportsshoes.png
+     - assets/images/shoes/vansoldskool.png
+     - assets/images/shoes/whitesneaker.png
+     - assets/images/shoes/women-shoes.png
+     - assets/images/womenfashion/kurta.png
+     - assets/images/womenfashion/lehenga.png
+     - assets/images/womenfashion/pants.png
+     - assets/images/womenfashion/t-shert.png
+     
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

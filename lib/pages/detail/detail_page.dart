@@ -43,7 +43,7 @@ class _DetailPageState extends State<DetailPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
-                5,
+                3,
                 (index) => AnimatedContainer(
                   duration: const Duration(microseconds: 300),
                   width: currentImage == index ? 15 : 8,

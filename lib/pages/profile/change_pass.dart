@@ -95,7 +95,7 @@ class _ChangePasswordState extends State<ChangePassword> {
       body: Center(
         child: SingleChildScrollView(
               child: Padding(
-              padding: const EdgeInsets.only(top: 30.0),
+              padding: const EdgeInsets.only(top: 0.0),
               child: Form(
                 key: formKey,
               child: Column(
@@ -107,6 +107,12 @@ class _ChangePasswordState extends State<ChangePassword> {
                   fontSize: 15.0,),
                   textAlign: TextAlign.center,
                 ),
+                Center(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 200.0,
+                    ),
+                  ), 
 
                 const SizedBox(height: 50.0),
                 AppTextFieldPassword(

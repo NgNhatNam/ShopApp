@@ -67,7 +67,7 @@ class _ProfilePageState extends State<ProfilePage> {
             decoration: const BoxDecoration(
               color: AppColor.kprimaryColor,
               image: DecorationImage(
-                  image: AssetImage('images/profile.png'), // Thay đổi đường dẫn tới ảnh nền của bạn
+                  image: AssetImage('assets/images/profile.png'), // Thay đổi đường dẫn tới ảnh nền của bạn
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
                 ),

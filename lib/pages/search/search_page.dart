@@ -36,28 +36,34 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         backgroundColor: AppColor.kcontentColor,
         title: const Text("Tìm kiếm",style: TextStyle(fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
-      body: Padding(
+      body: Container(
+        decoration: const BoxDecoration(
+        color: AppColor.kcontentColor, // Set the background color to black
+      ),
         padding: const EdgeInsets.all(10),
         child: Column(
           children: [
             Container(
+
       height: 55,
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColor.kcontentColor,
         borderRadius: BorderRadius.circular(30),
+        border:  Border.all(color: AppColor.grey, width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
       child: Row(
         children: [
           const Icon(
             Icons.search,
-            color: AppColor.grey,
+            color: AppColor.black,
             size: 30,
           ),
           const SizedBox(width: 10),
@@ -83,13 +89,13 @@ class _SearchPageState extends State<SearchPage> {
           Container(
             height: 25,
             width: 1.5,
-            color: AppColor.grey,
+            color: AppColor.kcontentColor,
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
               Icons.tune,
-              color: AppColor.grey,
+              color: AppColor.black,
             ),
           ),
         ],
