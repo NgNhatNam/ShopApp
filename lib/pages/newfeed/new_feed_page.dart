@@ -57,8 +57,8 @@ class NewsFeedPage extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      article.imageUrl,
+                    child: Image.asset(
+                      article.image,
                       width: 100,
                       height: 100,
                       fit: BoxFit.cover,

@@ -84,6 +84,7 @@ flutter:
      - assets/images/shoes.png
      - assets/images/slider.jpg
      - assets/images/slider3.png
+     - assets/images/feed/
      - assets/images/all/
      - assets/images/beauty/
      - assets/images/jewelry/
@@ -115,14 +116,13 @@ flutter:
      - assets/images/womenfashion/lehenga.png
      - assets/images/womenfashion/pants.png
      - assets/images/womenfashion/t-shert.png
-     - assets/images/feed/
-     - assets/images/feed/feed_1.jpg
-     - assets/images/feed/feed_2.jpg
-     - assets/images/feed/feed_3.jpg
-     - assets/images/feed/feed_4.jpg
-     - assets/images/feed/feed_5.jpg
-     - assets/images/feed/feed_6.jpg
-     - assets/images/feed/feed_7.jpg
+     - assets/images/feed/feed1.png
+     - assets/images/feed/feed2.png
+     - assets/images/feed/feed3.png
+     - assets/images/feed/feed4.png
+     - assets/images/feed/feed5.png
+     - assets/images/feed/feed6.png
+     - assets/images/feed/feed7.png
      
   #   - images/a_dot_ham.jpeg
 

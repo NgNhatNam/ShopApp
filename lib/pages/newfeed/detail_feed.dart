@@ -29,8 +29,8 @@ class ArticleDetailPage extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: Image.network(
-              article.imageUrl,
+            child: Image.asset(
+              article.image,
               width: double.infinity,
               height: 200,
               fit: BoxFit.cover,
