@@ -115,6 +115,14 @@ flutter:
      - assets/images/womenfashion/lehenga.png
      - assets/images/womenfashion/pants.png
      - assets/images/womenfashion/t-shert.png
+     - assets/images/feed/
+     - assets/images/feed/feed_1.jpg
+     - assets/images/feed/feed_2.jpg
+     - assets/images/feed/feed_3.jpg
+     - assets/images/feed/feed_4.jpg
+     - assets/images/feed/feed_5.jpg
+     - assets/images/feed/feed_6.jpg
+     - assets/images/feed/feed_7.jpg
      
   #   - images/a_dot_ham.jpeg
 

@@ -1,6 +1,7 @@
 import 'package:cuoi_ki_flutter/components/side_bar.dart';
 import 'package:cuoi_ki_flutter/models/product_model.dart';
 import 'package:cuoi_ki_flutter/pages/home/widget/image_slider.dart';
+import 'package:cuoi_ki_flutter/pages/newfeed/new_feed_page.dart';
 import 'package:cuoi_ki_flutter/pages/home/widget/product_cart.dart';
 import 'package:cuoi_ki_flutter/resources/app_color.dart';
 import 'package:flutter/material.dart';
@@ -38,9 +39,11 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: AppColor.kcontentColor,
             padding: const EdgeInsets.all(15),
           ),
-          onPressed: () {},
+          onPressed: () {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>  NewsFeedPage()));
+          },
           iconSize: 30,
-          icon: const Icon(Icons.notifications_outlined),
+          icon: const Icon(Icons.feed_outlined),
         ),
         ],
       ),
