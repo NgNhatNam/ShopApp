@@ -11,6 +11,7 @@ class CartProvider extends ChangeNotifier {
   List<Product> get paidProducts => _paidProducts;
   List<Product> get unpaidProducts => _unpaidProducts;
 
+
   void toggleFavorite(Product product) {
     if (_cart.contains(product)) {
       for (Product element in _cart) {
@@ -22,12 +23,12 @@ class CartProvider extends ChangeNotifier {
     }
     notifyListeners();
   }
-
+// tăng sp trong giỏ hàng
   void incrementQtn(int index) {
     _cart[index].quantity++;
     notifyListeners();
   }
-
+// giảm sp trong giỏ hàng
   void decrementQtn(int index) {
     if (_cart[index].quantity <= 1) {
       return;
@@ -35,7 +36,7 @@ class CartProvider extends ChangeNotifier {
     _cart[index].quantity--;
     notifyListeners();
   }
-
+//Tổng tiền bên giỏ hàng
   double totalPrice() {
     double total1 = 0.0;
     for (Product element in _cart) {
@@ -43,7 +44,7 @@ class CartProvider extends ChangeNotifier {
     }
     return total1;
   }
-
+//Tổng tiền bên đã thanh toán
   double totalPaidPrice() {
     double total = 0.0;
     for (Product product in _paidProducts) {
@@ -51,29 +52,24 @@ class CartProvider extends ChangeNotifier {
     }
     return total;
   }
-
+// Thanh toán
   void checkout() {
     _paidProducts.addAll(_unpaidProducts);
     _unpaidProducts.clear();
     notifyListeners();
   }
-
+// Xóa tổng tiền sau khi thanh toán trên giỏ hàng
   void clearTotalPrice() {
   _cart.clear();
   notifyListeners();
 }
-
-  void removeFromCart(Product product) { // Sửa đổi ở đây
-  _cart.remove(product); // Sửa đổi ở đây
-  _unpaidProducts.remove(product); // Sửa đổi ở đây
+// giỏ sp trong giỏ hàng
+  void removeFromCart(Product product) { 
+  _cart.remove(product); 
+  _unpaidProducts.remove(product); 
   notifyListeners();
 }
 
-  void cancelOrder(int index) {
-    final canceledProduct = _unpaidProducts.removeAt(index);
-    _cart.remove(canceledProduct);
-    notifyListeners();
-  }
 
   static CartProvider of(
     BuildContext context, {
